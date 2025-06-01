@@ -17,7 +17,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load Data
-df = pd.read_excel("/content/Marine Pollution data.xlsx", sheet_name="ENV_Marine_Pollution_Obs_data_v")
+df = pd.read_excel("Marine Pollution data.xlsx", sheet_name="ENV_Marine_Pollution_Obs_data_v")
 df['inc_date'] = pd.to_datetime(df['inc_date'], errors='coerce')
 df['pollution_qty'] = pd.to_numeric(df['pollution_qty'], errors='coerce')
 
